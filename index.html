@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Encriptador de Texto Jesimaju</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="imagenes/Logo.jpeg" alt="logo desarrollador" class="logo">
+        </div>
+    </header>
+
+    <main class="horizontal-layout">
+        <section class="text-section">
+            <textarea class="text-area" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="informacion">
+                <h6>Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones-container">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="result-section">
+            <textarea class="mensaje" readonly></textarea>
+            <button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <footer class="propietario">
+        Diseñado por Jessica Juliana Ciro Gómez  
+        <br> junio - agosto de 2024 en Colombia 
+    </footer>
+</body>
+</html>
+
+

@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.propietario {
+    position:fixed; 
+    bottom:0; 
+    width:100%; 
+    background-color:#f1f1f1; 
+    text-align:center; 
+    padding:10px;
+}
+
+body {
+    background: #dce2e2;
+    font-family: "Gupter", serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.logo {
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 8%;
+}
+
+main.horizontal-layout {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.text-section, .result-section {
+    width: 48%; /* Ajustar el ancho para que ambos campos sean del mismo tamaño */
+    min-width: 300px; /* Define un ancho mínimo para evitar que se vuelvan demasiado estrechos en pantallas pequeñas */
+}
+
+.text-area, .mensaje {
+    width: 100%;
+    min-height: 150px; /* Ajusta la altura mínima para que sea más alargado */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    color: #0e233c;
+    background-color: #fff;
+    text-transform: lowercase;
+    font-size: 16px;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total */
+}
+
+::placeholder {
+    color: #0e233c;
+}
+
+.text-area:focus, .mensaje:focus {
+    outline: none;
+}
+
+.botones-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn-encriptar, .btn-desencriptar, .btn-copiar {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-encriptar {
+    background-color: #0e233c;
+    color: #dce2e2;
+    width: 48%;
+}
+
+.btn-desencriptar {
+    background-color: #dce2e2;
+    color: #0e233c;
+    width: 48%;
+}
+
+.btn-copiar {
+    background-color: #0e233c;
+    color: #dce2e2;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn-encriptar:hover, .btn-desencriptar:hover, .btn-copiar:hover {
+    opacity: 0.9;
+}
+
+.informacion {
+    color: #313538;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    main.horizontal-layout {
+        flex-direction: column;
+    }
+
+    .text-section, .result-section {
+        width: 100%;
+    }
+
+    .btn-encriptar, .btn-desencriptar {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .btn-copiar {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+
